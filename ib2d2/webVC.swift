@@ -7,24 +7,23 @@
 //
 
 import UIKit
+import WebKit
 
-class webVC: UITabBarController {
-
+class webVC: UITabBarController, WKNavigationDelegate {
+    @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.title = "BackBlaze Website"
+        
+        // View the BackBlaze Website
+        let webView = WKWebView()
+        let webUrl = URL(string: "https://www.backblaze.com/")
+        
+        webView.navigationDelegate = self
+        view = webView
+        webView.scrollView.isScrollEnabled = true
+        webView.load(URLRequest(url: webUrl!))
+        webView.reload()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
