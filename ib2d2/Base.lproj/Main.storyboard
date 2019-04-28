@@ -33,11 +33,11 @@
                             <outlet property="delegate" destination="npj-jI-Ead" id="voV-k4-Nfu"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Md5-V1-wP8"/>
+                    <navigationItem key="navigationItem" id="9Mr-aP-jnj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzb-yA-8Vs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-639" y="1200"/>
+            <point key="canvasLocation" x="-639" y="1902"/>
         </scene>
         <!--Add New-->
         <scene sceneID="lxY-R6-ZZr">
@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1U-6r-AlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="1200"/>
+            <point key="canvasLocation" x="1184" y="1200"/>
         </scene>
         <!--3-2-1-->
         <scene sceneID="BI9-am-ez6">
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRo-NJ-8Gw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="1200"/>
+            <point key="canvasLocation" x="254" y="1200"/>
         </scene>
         <!--TabsVC-->
         <scene sceneID="UJF-mN-lxf">
@@ -81,18 +81,18 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="npj-jI-Ead" kind="relationship" relationship="viewControllers" id="MRp-XE-msP"/>
+                        <segue destination="41H-8m-ALA" kind="relationship" relationship="viewControllers" id="MRp-XE-msP"/>
                         <segue destination="eII-sZ-4Ql" kind="relationship" relationship="viewControllers" id="sl6-kX-xu6"/>
                         <segue destination="y1N-ZH-5G4" kind="relationship" relationship="viewControllers" id="VYR-1g-oXd"/>
-                        <segue destination="6nj-Oe-UAw" kind="relationship" relationship="viewControllers" id="LTk-kg-J6I"/>
-                        <segue destination="zJT-aI-qk6" kind="relationship" relationship="viewControllers" id="2HD-ro-4YB"/>
+                        <segue destination="rzd-qr-Y0j" kind="relationship" relationship="viewControllers" id="LTk-kg-J6I"/>
+                        <segue destination="V3K-bj-dTD" kind="relationship" relationship="viewControllers" id="2HD-ro-4YB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUd-5G-e7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="431"/>
         </scene>
-        <!--Item-->
+        <!--AboutVC-->
         <scene sceneID="0ji-fe-707">
             <objects>
                 <viewController id="zJT-aI-qk6" customClass="aboutVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,25 +101,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backblaze" translatesAutoresizingMaskIntoConstraints="NO" id="cZt-aE-zaU">
-                                <rect key="frame" x="20" y="91" width="374" height="99"/>
+                                <rect key="frame" x="20" y="88" width="374" height="99"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="99" id="fpU-si-A10"/>
+                                    <constraint firstAttribute="height" constant="99" id="dbF-h1-YUP"/>
                                 </constraints>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-Ee-5nD">
-                                <rect key="frame" x="20" y="186" width="374" height="282"/>
+                                <rect key="frame" x="20" y="195" width="374" height="273"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="SXG-Ee-5nD" secondAttribute="height" multiplier="187:141" id="sOd-gL-UPC"/>
+                                    <constraint firstAttribute="width" secondItem="SXG-Ee-5nD" secondAttribute="height" multiplier="374:273" id="Obj-zY-MFH"/>
                                 </constraints>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About ib2d2: BackBlaze Data Defense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-Ce-gc1">
-                                <rect key="frame" x="25" y="476" width="369" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-aP-hlq">
-                                <rect key="frame" x="20" y="488" width="374" height="144"/>
+                                <rect key="frame" x="20" y="498" width="374" height="144"/>
                                 <string key="text">Powered by BackBlaze, ib2d2 is built on B2 Cloud Storage. B2 Cloud Storage is an affordable cloud storage that challenges Amazon's S3, Microsoft's Azure, and Google Cloud.  "b2d2" was originally a python project for backing up servers in a client-server setup. ib2d2 leverages B2's cheap pricing for affordable and reliable backups to help protect your pictures, videos, and memories.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -127,6 +121,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQk-oI-e38">
                                 <rect key="frame" x="87" y="659" width="240" height="34"/>
                                 <color key="backgroundColor" red="0.29298884679999998" green="0.4560958141" blue="0.80729841319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="IAU-Vl-612"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Share on FaceBook">
@@ -156,42 +153,48 @@
                                 <state key="normal" title="Visit BackBlaze B2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Mas-8v-D4E" kind="show" id="F36-ai-4qi"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About ib2d2: BackBlaze Data Defense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-Ce-gc1">
+                                <rect key="frame" x="25" y="480" width="369" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="cZt-aE-zaU" secondAttribute="trailing" constant="20" id="0bc-UJ-idE"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="BDO-Yf-Y3j" secondAttribute="trailing" constant="87" id="1zf-yp-BaO"/>
-                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="cZt-aE-zaU" secondAttribute="bottom" constant="286" id="3uT-pk-Ked"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="GQk-oI-e38" secondAttribute="trailing" constant="87" id="3v1-Og-wzl"/>
-                            <constraint firstItem="oF0-89-5U9" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="42Y-bc-jSI"/>
-                            <constraint firstItem="SXG-Ee-5nD" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="5lK-cz-ims"/>
-                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="Nkq-aP-hlq" secondAttribute="bottom" constant="27" id="9gw-Te-AYw"/>
-                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="wqp-Ce-gc1" secondAttribute="bottom" constant="162" id="EVO-dz-qj3"/>
-                            <constraint firstItem="oF0-89-5U9" firstAttribute="top" secondItem="BDO-Yf-Y3j" secondAttribute="bottom" constant="8" id="FFa-Yv-GwD"/>
-                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="Nkq-aP-hlq" secondAttribute="bottom" constant="27" id="GEn-ub-Off"/>
-                            <constraint firstItem="Nkq-aP-hlq" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="K8e-Kc-yb0"/>
-                            <constraint firstItem="GQk-oI-e38" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="R38-6u-Ago"/>
-                            <constraint firstItem="Nkq-aP-hlq" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="20" id="R97-uh-4Et"/>
-                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="8" id="RmA-jg-eCH"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="SXG-Ee-5nD" secondAttribute="trailing" constant="20" id="S9K-ss-4a5"/>
-                            <constraint firstItem="cZt-aE-zaU" firstAttribute="top" secondItem="Djy-rX-frQ" secondAttribute="top" constant="47" id="SKI-zJ-iUe"/>
-                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="25" id="VhY-SF-nHe"/>
-                            <constraint firstItem="SXG-Ee-5nD" firstAttribute="top" secondItem="Djy-rX-frQ" secondAttribute="top" constant="142" id="Z0T-1X-D9l"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="oF0-89-5U9" secondAttribute="trailing" constant="87" id="c5Q-Qv-fD4"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="Nkq-aP-hlq" secondAttribute="trailing" constant="20" id="eZU-Sv-6Q9"/>
-                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="top" secondItem="GQk-oI-e38" secondAttribute="bottom" constant="8" id="ewx-FK-FUE"/>
-                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="8" id="hDD-6D-ht0"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="bottom" secondItem="oF0-89-5U9" secondAttribute="bottom" constant="36" id="jja-Xg-M5e"/>
-                            <constraint firstItem="oF0-89-5U9" firstAttribute="top" secondItem="BDO-Yf-Y3j" secondAttribute="bottom" constant="8" id="pQA-79-nPd"/>
-                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="top" secondItem="GQk-oI-e38" secondAttribute="bottom" constant="8" id="pYp-Nc-rGG"/>
-                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="wqp-Ce-gc1" secondAttribute="trailing" constant="20" id="rpq-xz-08w"/>
-                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="uLb-2g-SCL"/>
-                            <constraint firstItem="cZt-aE-zaU" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="zqn-TL-AE9"/>
+                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="Nkq-aP-hlq" secondAttribute="bottom" constant="17" id="5YT-ML-258"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="SXG-Ee-5nD" secondAttribute="trailing" constant="20" id="Aw9-jV-ASe"/>
+                            <constraint firstItem="SXG-Ee-5nD" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="Cnq-9d-Qpn"/>
+                            <constraint firstItem="Nkq-aP-hlq" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="30" id="DoD-QX-kuc"/>
+                            <constraint firstItem="cZt-aE-zaU" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="Fw6-cY-xdY"/>
+                            <constraint firstItem="Nkq-aP-hlq" firstAttribute="leading" secondItem="SXG-Ee-5nD" secondAttribute="leading" id="LHm-3h-xFc"/>
+                            <constraint firstItem="oF0-89-5U9" firstAttribute="trailing" secondItem="BDO-Yf-Y3j" secondAttribute="trailing" id="MEV-Ly-Bpw"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="12" id="QDm-6V-XbB"/>
+                            <constraint firstItem="GQk-oI-e38" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="RaS-be-cdp"/>
+                            <constraint firstItem="oF0-89-5U9" firstAttribute="leading" secondItem="BDO-Yf-Y3j" secondAttribute="leading" id="VrS-Jl-Qke"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="trailing" secondItem="SXG-Ee-5nD" secondAttribute="trailing" id="Xx4-KU-9Cu"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="cZt-aE-zaU" secondAttribute="trailing" constant="20" id="aTB-3J-41L"/>
+                            <constraint firstAttribute="bottom" secondItem="GQk-oI-e38" secondAttribute="bottom" constant="203" id="bUs-Gg-pB4"/>
+                            <constraint firstItem="oF0-89-5U9" firstAttribute="top" secondItem="BDO-Yf-Y3j" secondAttribute="bottom" constant="8" symbolic="YES" id="dKX-CV-tkX"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="trailing" secondItem="Nkq-aP-hlq" secondAttribute="trailing" id="dSA-qP-qeT"/>
+                            <constraint firstItem="cZt-aE-zaU" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="dvD-RS-fYl"/>
+                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="top" secondItem="GQk-oI-e38" secondAttribute="bottom" constant="8" symbolic="YES" id="fgf-bc-9tY"/>
+                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="trailing" secondItem="GQk-oI-e38" secondAttribute="trailing" id="jTg-Eg-o8P"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="GQk-oI-e38" secondAttribute="trailing" constant="87" id="jjg-z4-Gwg"/>
+                            <constraint firstItem="cZt-aE-zaU" firstAttribute="top" secondItem="Djy-rX-frQ" secondAttribute="top" id="jtM-0r-gFM"/>
+                            <constraint firstItem="SXG-Ee-5nD" firstAttribute="top" secondItem="cZt-aE-zaU" secondAttribute="bottom" constant="8" id="o5L-OV-1bu"/>
+                            <constraint firstItem="cZt-aE-zaU" firstAttribute="top" secondItem="Djy-rX-frQ" secondAttribute="top" id="qXp-tO-Rb8"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="cZt-aE-zaU" secondAttribute="trailing" constant="20" id="r4X-tg-Vkp"/>
+                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="leading" secondItem="GQk-oI-e38" secondAttribute="leading" id="sNh-Bd-yy3"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="25" id="xok-UK-mfV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Djy-rX-frQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="g4j-6s-x0A"/>
+                    <navigationItem key="navigationItem" id="mad-rv-5Vc"/>
                     <connections>
                         <outlet property="fbStyle" destination="GQk-oI-e38" id="kYB-3c-lnf"/>
                         <outlet property="mapView" destination="SXG-Ee-5nD" id="jUP-tx-uxl"/>
@@ -201,7 +204,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7H-m1-xBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3041" y="1200"/>
+            <point key="canvasLocation" x="3040.579710144928" y="1924.5535714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L5M-SY-B7B">
+            <objects>
+                <viewController id="Mas-8v-D4E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dqG-BG-bqd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ahl-R7-i2X"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r4D-IE-fsF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEn-9o-dLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4068" y="1562"/>
         </scene>
         <!--Settings-->
         <scene sceneID="6Qg-48-1th">
@@ -213,11 +232,68 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yca-mW-WdT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="YOo-Ec-DuG"/>
+                    <navigationItem key="navigationItem" id="HGg-9u-C68"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFz-Wj-wm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084" y="1200"/>
+            <point key="canvasLocation" x="2083" y="1925"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="54m-tm-OOk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V3K-bj-dTD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="g4j-6s-x0A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vrW-J1-qbB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zJT-aI-qk6" kind="relationship" relationship="rootViewController" id="zLB-CE-bcd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cX1-LR-eK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3041" y="1200"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="RMa-rE-Vhh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rzd-qr-Y0j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YOo-Ec-DuG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U9B-MX-JX3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6nj-Oe-UAw" kind="relationship" relationship="rootViewController" id="eZJ-ah-WOJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AU-Ns-jRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="1200"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="dNA-pT-oAI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="41H-8m-ALA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Md5-V1-wP8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lbk-QZ-hGz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="npj-jI-Ead" kind="relationship" relationship="rootViewController" id="3eJ-yS-eH8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRX-di-EFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.13043478260875" y="1200"/>
         </scene>
     </scenes>
     <resources>
