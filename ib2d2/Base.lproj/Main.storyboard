@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eIi-Ia-JgE">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,15 @@
             <objects>
                 <tableViewController title="Browse Files" id="npj-jI-Ead" customClass="listTVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eDK-8H-TbG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dEg-2G-Hz1">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dEg-2G-Hz1" id="Mju-BS-xoN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -44,7 +44,7 @@
             <objects>
                 <viewController title="Add New" id="y1N-ZH-5G4" customClass="addVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ggf-VZ-TeD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="toy-Iv-CHr"/>
@@ -60,7 +60,7 @@
             <objects>
                 <viewController title="3-2-1" id="eII-sZ-4Ql" customClass="backupsVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wf0-cb-dAD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="S6Z-TL-pnm"/>
@@ -71,54 +71,144 @@
             </objects>
             <point key="canvasLocation" x="276" y="1200"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TabsVC-->
         <scene sceneID="UJF-mN-lxf">
             <objects>
-                <tabBarController id="eIi-Ia-JgE" sceneMemberID="viewController">
+                <tabBarController id="eIi-Ia-JgE" customClass="tabsVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5UE-Kc-6wE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="npj-jI-Ead" kind="relationship" relationship="viewControllers" id="MRp-XE-msP"/>
                         <segue destination="eII-sZ-4Ql" kind="relationship" relationship="viewControllers" id="sl6-kX-xu6"/>
                         <segue destination="y1N-ZH-5G4" kind="relationship" relationship="viewControllers" id="VYR-1g-oXd"/>
                         <segue destination="6nj-Oe-UAw" kind="relationship" relationship="viewControllers" id="LTk-kg-J6I"/>
-                        <segue destination="q9M-cT-XFZ" kind="relationship" relationship="viewControllers" id="XCS-nf-XmC"/>
+                        <segue destination="zJT-aI-qk6" kind="relationship" relationship="viewControllers" id="2HD-ro-4YB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUd-5G-e7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1185" y="431"/>
         </scene>
-        <!--About-->
-        <scene sceneID="UA4-Wn-tIw">
+        <!--Item-->
+        <scene sceneID="0ji-fe-707">
             <objects>
-                <viewController title="About" id="q9M-cT-XFZ" customClass="aboutVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="w0O-xM-cik">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="zJT-aI-qk6" customClass="aboutVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tmd-P7-j7c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backblaze" translatesAutoresizingMaskIntoConstraints="NO" id="cZt-aE-zaU">
+                                <rect key="frame" x="20" y="91" width="374" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="fpU-si-A10"/>
+                                </constraints>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SXG-Ee-5nD">
+                                <rect key="frame" x="20" y="186" width="374" height="282"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SXG-Ee-5nD" secondAttribute="height" multiplier="187:141" id="sOd-gL-UPC"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About ib2d2: BackBlaze Data Defense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-Ce-gc1">
+                                <rect key="frame" x="25" y="476" width="369" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-aP-hlq">
+                                <rect key="frame" x="20" y="488" width="374" height="144"/>
+                                <string key="text">Powered by BackBlaze, ib2d2 is built on B2 Cloud Storage. B2 Cloud Storage is an affordable cloud storage that challenges Amazon's S3, Microsoft's Azure, and Google Cloud.  "b2d2" was originally a python project for backing up servers in a client-server setup. ib2d2 leverages B2's cheap pricing for affordable and reliable backups to help protect your pictures, videos, and memories.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQk-oI-e38">
+                                <rect key="frame" x="87" y="659" width="240" height="34"/>
+                                <color key="backgroundColor" red="0.29298884679999998" green="0.4560958141" blue="0.80729841319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Share on FaceBook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fbButton:" destination="zJT-aI-qk6" eventType="touchUpInside" id="BZT-54-VAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDO-Yf-Y3j">
+                                <rect key="frame" x="87" y="701" width="240" height="34"/>
+                                <color key="backgroundColor" red="0.32776259829999999" green="0.71445441109999996" blue="0.80729841319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Tweet on Twitter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="twButton:" destination="zJT-aI-qk6" eventType="touchUpInside" id="s3w-2d-ZV5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF0-89-5U9">
+                                <rect key="frame" x="87" y="743" width="240" height="34"/>
+                                <color key="backgroundColor" red="0.80729841319999995" green="0.13527547279999999" blue="0.073251633369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Visit BackBlaze B2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UqO-fK-MiO"/>
+                        <constraints>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="cZt-aE-zaU" secondAttribute="trailing" constant="20" id="0bc-UJ-idE"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="BDO-Yf-Y3j" secondAttribute="trailing" constant="87" id="1zf-yp-BaO"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="cZt-aE-zaU" secondAttribute="bottom" constant="286" id="3uT-pk-Ked"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="GQk-oI-e38" secondAttribute="trailing" constant="87" id="3v1-Og-wzl"/>
+                            <constraint firstItem="oF0-89-5U9" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="42Y-bc-jSI"/>
+                            <constraint firstItem="SXG-Ee-5nD" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="5lK-cz-ims"/>
+                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="Nkq-aP-hlq" secondAttribute="bottom" constant="27" id="9gw-Te-AYw"/>
+                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="wqp-Ce-gc1" secondAttribute="bottom" constant="162" id="EVO-dz-qj3"/>
+                            <constraint firstItem="oF0-89-5U9" firstAttribute="top" secondItem="BDO-Yf-Y3j" secondAttribute="bottom" constant="8" id="FFa-Yv-GwD"/>
+                            <constraint firstItem="GQk-oI-e38" firstAttribute="top" secondItem="Nkq-aP-hlq" secondAttribute="bottom" constant="27" id="GEn-ub-Off"/>
+                            <constraint firstItem="Nkq-aP-hlq" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="K8e-Kc-yb0"/>
+                            <constraint firstItem="GQk-oI-e38" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="R38-6u-Ago"/>
+                            <constraint firstItem="Nkq-aP-hlq" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="20" id="R97-uh-4Et"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="8" id="RmA-jg-eCH"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="SXG-Ee-5nD" secondAttribute="trailing" constant="20" id="S9K-ss-4a5"/>
+                            <constraint firstItem="cZt-aE-zaU" firstAttribute="top" secondItem="Djy-rX-frQ" secondAttribute="top" constant="47" id="SKI-zJ-iUe"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="25" id="VhY-SF-nHe"/>
+                            <constraint firstItem="SXG-Ee-5nD" firstAttribute="top" secondItem="Djy-rX-frQ" secondAttribute="top" constant="142" id="Z0T-1X-D9l"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="oF0-89-5U9" secondAttribute="trailing" constant="87" id="c5Q-Qv-fD4"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="Nkq-aP-hlq" secondAttribute="trailing" constant="20" id="eZU-Sv-6Q9"/>
+                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="top" secondItem="GQk-oI-e38" secondAttribute="bottom" constant="8" id="ewx-FK-FUE"/>
+                            <constraint firstItem="wqp-Ce-gc1" firstAttribute="top" secondItem="SXG-Ee-5nD" secondAttribute="bottom" constant="8" id="hDD-6D-ht0"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="bottom" secondItem="oF0-89-5U9" secondAttribute="bottom" constant="36" id="jja-Xg-M5e"/>
+                            <constraint firstItem="oF0-89-5U9" firstAttribute="top" secondItem="BDO-Yf-Y3j" secondAttribute="bottom" constant="8" id="pQA-79-nPd"/>
+                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="top" secondItem="GQk-oI-e38" secondAttribute="bottom" constant="8" id="pYp-Nc-rGG"/>
+                            <constraint firstItem="Djy-rX-frQ" firstAttribute="trailing" secondItem="wqp-Ce-gc1" secondAttribute="trailing" constant="20" id="rpq-xz-08w"/>
+                            <constraint firstItem="BDO-Yf-Y3j" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="87" id="uLb-2g-SCL"/>
+                            <constraint firstItem="cZt-aE-zaU" firstAttribute="leading" secondItem="Djy-rX-frQ" secondAttribute="leading" constant="20" id="zqn-TL-AE9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Djy-rX-frQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="KR4-vp-e9m"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="g4j-6s-x0A"/>
+                    <connections>
+                        <outlet property="fbStyle" destination="GQk-oI-e38" id="kYB-3c-lnf"/>
+                        <outlet property="mapView" destination="SXG-Ee-5nD" id="jUP-tx-uxl"/>
+                        <outlet property="twStyle" destination="BDO-Yf-Y3j" id="r3f-QF-IUT"/>
+                        <outlet property="wbStyle" destination="oF0-89-5U9" id="Vb8-Ic-l9l"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mpH-fn-K5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7H-m1-xBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3009" y="1200"/>
+            <point key="canvasLocation" x="3041" y="1200"/>
         </scene>
         <!--Settings-->
         <scene sceneID="6Qg-48-1th">
             <objects>
                 <viewController title="Settings" id="6nj-Oe-UAw" customClass="settingsVC" customModule="ib2d2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oM-or-Jrl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yca-mW-WdT"/>
@@ -130,4 +220,7 @@
             <point key="canvasLocation" x="2084" y="1200"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backblaze" width="1055" height="244"/>
+    </resources>
 </document>

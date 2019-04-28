@@ -25,7 +25,7 @@ class listTVC: UITableViewController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Browse", image: UIImage(named: "icon-books"), tag: 1)
+        tabBarItem = UITabBarItem(title: "Browse", image: UIImage(named: "list"), tag: 1)
     }
 
     // MARK: - Table view data source

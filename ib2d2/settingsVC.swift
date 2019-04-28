@@ -21,7 +21,7 @@ class settingsVC: UIViewController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "icon-books"), tag: 1)
+        tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "settings"), tag: 1)
     }
     
 

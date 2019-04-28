@@ -21,7 +21,7 @@ class addVC: UIViewController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Add New", image: UIImage(named: "icon-books"), tag: 1)
+        tabBarItem = UITabBarItem(title: "Add New", image: UIImage(named: "add"), tag: 1)
     }
     
     /*

@@ -1,5 +1,5 @@
 //
-//  backupsVC.swift
+//  tabsVC.swift
 //  ib2d2
 //
 //  Created by balon on 4/26/19.
@@ -8,22 +8,16 @@
 
 import UIKit
 
-class backupsVC: UIViewController {
-
+class tabsVC: UITabBarController {
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.selectedIndex = 2
+        self.tabBar.tintColor = UIColor.red
         // Do any additional setup after loading the view.
     }
     
-    /* Set the tab name + image */
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "3-2-1", image: UIImage(named: "cloud"), tag: 1)
-    }
-    
+
     /*
     // MARK: - Navigation
 
