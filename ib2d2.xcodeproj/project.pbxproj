@@ -17,9 +17,11 @@
 		FA27DFD4227395A200B01F78 /* settingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DFD3227395A200B01F78 /* settingsVC.swift */; };
 		FA27DFD6227395B700B01F78 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DFD5227395B700B01F78 /* aboutVC.swift */; };
 		FA27DFDA2273960C00B01F78 /* backupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DFD92273960C00B01F78 /* backupsVC.swift */; };
-		FA27DFDC227396AD00B01F78 /* listTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DFDB227396AD00B01F78 /* listTVC.swift */; };
+		FAB2CBDC227EE8F8002AE880 /* createVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBDB227EE8F8002AE880 /* createVC.swift */; };
 		FAC19214227642E1008E531D /* webVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC19213227642E1008E531D /* webVC.swift */; };
 		FAD28F552273F3A80061BFCE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD28F542273F3A80061BFCE /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FADB75FC22766B7700776AB5 /* listVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB75FB22766B7700776AB5 /* listVC.swift */; };
+		FADB75FE22767DC700776AB5 /* web321VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB75FD22767DC700776AB5 /* web321VC.swift */; };
 		FAFE82722273A05900834029 /* tabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE82712273A05900834029 /* tabsVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +38,11 @@
 		FA27DFD3227395A200B01F78 /* settingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsVC.swift; sourceTree = "<group>"; };
 		FA27DFD5227395B700B01F78 /* aboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		FA27DFD92273960C00B01F78 /* backupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backupsVC.swift; sourceTree = "<group>"; };
-		FA27DFDB227396AD00B01F78 /* listTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTVC.swift; sourceTree = "<group>"; };
+		FAB2CBDB227EE8F8002AE880 /* createVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createVC.swift; sourceTree = "<group>"; };
 		FAC19213227642E1008E531D /* webVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVC.swift; sourceTree = "<group>"; };
 		FAD28F542273F3A80061BFCE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FADB75FB22766B7700776AB5 /* listVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listVC.swift; sourceTree = "<group>"; };
+		FADB75FD22767DC700776AB5 /* web321VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web321VC.swift; sourceTree = "<group>"; };
 		FAFE82712273A05900834029 /* tabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,7 @@
 				FA27DFB82270F6C400B01F78 /* AppDelegate.swift */,
 				FA27DFBA2270F6C400B01F78 /* ViewController.swift */,
 				FA27DFBC2270F6C400B01F78 /* Main.storyboard */,
+				FAB2CBDB227EE8F8002AE880 /* createVC.swift */,
 				FA27DFD12273958200B01F78 /* addVC.swift */,
 				FA27DFD3227395A200B01F78 /* settingsVC.swift */,
 				FA27DFD5227395B700B01F78 /* aboutVC.swift */,
@@ -85,9 +90,10 @@
 				FA27DFC72270F6C700B01F78 /* Info.plist */,
 				FA27DFBF2270F6C400B01F78 /* ib2d2.xcdatamodeld */,
 				FA27DFD92273960C00B01F78 /* backupsVC.swift */,
-				FA27DFDB227396AD00B01F78 /* listTVC.swift */,
 				FAFE82712273A05900834029 /* tabsVC.swift */,
 				FAC19213227642E1008E531D /* webVC.swift */,
+				FADB75FB22766B7700776AB5 /* listVC.swift */,
+				FADB75FD22767DC700776AB5 /* web321VC.swift */,
 			);
 			path = ib2d2;
 			sourceTree = "<group>";
@@ -171,15 +177,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADB75FC22766B7700776AB5 /* listVC.swift in Sources */,
 				FA27DFD22273958200B01F78 /* addVC.swift in Sources */,
-				FA27DFDC227396AD00B01F78 /* listTVC.swift in Sources */,
 				FA27DFBB2270F6C400B01F78 /* ViewController.swift in Sources */,
 				FA27DFD4227395A200B01F78 /* settingsVC.swift in Sources */,
 				FA27DFDA2273960C00B01F78 /* backupsVC.swift in Sources */,
 				FA27DFD6227395B700B01F78 /* aboutVC.swift in Sources */,
+				FAB2CBDC227EE8F8002AE880 /* createVC.swift in Sources */,
 				FA27DFB92270F6C400B01F78 /* AppDelegate.swift in Sources */,
 				FAC19214227642E1008E531D /* webVC.swift in Sources */,
 				FA27DFC12270F6C400B01F78 /* ib2d2.xcdatamodeld in Sources */,
+				FADB75FE22767DC700776AB5 /* web321VC.swift in Sources */,
 				FAFE82722273A05900834029 /* tabsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
