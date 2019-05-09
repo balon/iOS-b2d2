@@ -161,6 +161,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="aIK-AU-nRP"/>
                     <connections>
+                        <outlet property="addButton" destination="Z7h-Rm-Sog" id="1yh-xI-0N6"/>
                         <segue destination="cJ6-h8-qpN" kind="show" identifier="createBackupSeg" id="IMu-KV-qiY"/>
                     </connections>
                 </viewController>
@@ -491,6 +492,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="legalButton:" destination="6nj-Oe-UAw" eventType="touchUpInside" id="7NU-lC-Dpy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dly-6A-YOs">
                                 <rect key="frame" x="63" y="577" width="288" height="46"/>
@@ -502,6 +506,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fGb-Vq-ggv" kind="show" id="BJw-Ol-ugI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-Mr-lAf">
                                 <rect key="frame" x="63" y="718" width="288" height="46"/>
@@ -512,6 +519,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="docButton:" destination="6nj-Oe-UAw" eventType="touchUpInside" id="vVV-Eu-iCy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Key ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xP1-1e-Hxp">
                                 <rect key="frame" x="46" y="241" width="144" height="21"/>
@@ -581,7 +591,8 @@
                         <outlet property="textAccountId" destination="NLM-jX-QyX" id="0yY-m5-Rmn"/>
                         <outlet property="textAccountKey" destination="zPV-Ir-RpZ" id="qJj-gx-lYF"/>
                         <outlet property="textBucketName" destination="qAt-Fi-dna" id="oh0-AB-QrZ"/>
-                        <segue destination="CIf-J5-Snl" kind="show" id="gpZ-LU-qgZ"/>
+                        <segue destination="CIf-J5-Snl" kind="show" identifier="docWeb" id="gpZ-LU-qgZ"/>
+                        <segue destination="CIf-J5-Snl" kind="show" identifier="legalWeb" id="0eW-pU-3Br"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFz-Wj-wm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -920,6 +931,30 @@
             </objects>
             <point key="canvasLocation" x="1182.608695652174" y="2617.6339285714284"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ReU-BR-lhF">
+            <objects>
+                <viewController id="fGb-Vq-ggv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EMj-kR-ou1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Application Log Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laS-GJ-CMN">
+                                <rect key="frame" x="94" y="438" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zFS-28-MXs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAl-dg-5Nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.608695652174" y="2617.6339285714284"/>
+        </scene>
         <!--Web HandlerVC-->
         <scene sceneID="Mgh-fR-UjN">
             <objects>
@@ -967,6 +1002,6 @@
         <image name="upload" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9tX-Rj-dio"/>
+        <segue reference="gpZ-LU-qgZ"/>
     </inferredMetricsTieBreakers>
 </document>

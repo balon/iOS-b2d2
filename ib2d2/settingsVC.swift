@@ -160,4 +160,25 @@ class settingsVC: UIViewController {
         textAccountId.placeholder = "Current: \(existAccountID!)"
         textAccountKey.placeholder = "Current: **********[REDACTED]**********"
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "legalWeb") {
+            let vc = segue.destination as! webHandlerVC
+            vc.webUrl = "https://www.backblaze.com/company/terms.html"
+            vc.webTitle = "Terms of Service"
+        }
+        if (segue.identifier == "docWeb") {
+            let vc = segue.destination as! webHandlerVC
+            vc.webUrl = "https://github.com/balon/ib2d2/blob/master/README.md"
+            vc.webTitle = "App Documentation"
+        }
+    }
+    
+    @IBAction func legalButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "legalWeb", sender: self)
+    }
+    
+    @IBAction func docButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "docWeb", sender: self)
+    }
 }
