@@ -4,23 +4,22 @@
 </center>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Swift](https://img.shields.io/cocoapods/p/testing.svg?color=red) ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg) [![Discord](https://img.shields.io/discord/370338751437733898.svg)](https://discord.gg/Ht5hfE7) [![Twitter Follow](https://img.shields.io/twitter/follow/tangoworldwide.svg?style=social&label=Follow)](https://twitter.com/TangoWorldWide)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Swift](https://img.shields.io/cocoapods/p/testing.svg?color=red) ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg) [![Discord](https://img.shields.io/discord/370338751437733898.svg)](https://discord.gg/Ht5hfE7) [![Twitter Follow](https://img.shields.io/twitter/follow/tangoworldwide.svg?style=social&label=Follow)](https://twitter.com/TangoWorldWide)
 
 ## Basic Overview
-*In a galaxy far far away* phones were being tossed in the toliet, stolen, and Apple's updates were corrupting file-systems... a new backup solution was needed, so we brought you ib2d2. Droid's (clients) will talk to their master host and upload backups by a user-defined json file. Upon receiving a backup, the master will hold the data on server, and offload to BackBlaze for maximum redundancy. 
+*In a galaxy far far away* phones were being tossed in the toliet, stolen, and Apple's updates were corrupting file-systems... a new backup solution was needed, so we brought you ib2d2. b2d2 leveraged BackBlaze's affordable file hosting. ib2d2 uses the same BackBlaze B2 Cloud Storage to keep your files and memories safe. ib2d2 talks to the B2 API to send images and videos. You can view those assets in the app from the 'Browse' tab, or on the BackBlaze website!
 
 What's better than two copies of data? __Three__.
 
 ## Key Features
-* Loads of users with sudo? Yuck! Don't share your B2 API Key on server, offload backups to the master.
-* Master supports hash comparison for upload, saving you space!
-* Multi-threading support for server
-* Mac and Linux ready out of box
-* Easy to use configuration files & backup handling
-* Whitelist protection of server to keep the bad-guys out
-* Native B2 integration from official client
+* Browse your backups right from your device
+* Hash comparisons to ensure backup reliability
+* Seperate networking thread for uploads
+* Easy to configure Settings tab; just copy and go
+* Native web handling from Swift
+* File encryption on upload
 
-## Install
+## How It Works
 Install is simple, each instance supports a "First Time Setup" to get you started! All information will be generated here, don't forget to edit the **IDENTIFIER** section of your config before FTSU is executed.
 
 #### Master:
@@ -51,49 +50,6 @@ $ crontab -e -u backups
 # * 0 4 * * * python3 /srv/backups/droid.py >/dev/null 2>&1
 ```
 
-## Droid backup definitions
-Backups are simple with json files! Define each backup in the items array. Add new backups to `backups.json` on each droid: 
-```json
-{
-  "items": [
-    {
-      "name": "Personal-Website",
-      "paths": [
-        "/srv/http/myWebsite",
-        "/etc/nginx/sites-available/myWebsite.conf"
-      ],
-      "exclude": [
-        "Feature not yet implemented"
-      ]
-    },
-    {
-      "name": "Programs",
-      "paths": [
-        "/home/b2d2/programs"
-      ],
-      "exclude": [
-        "Feature not yet implemented"
-      ]
-    }
-
-  ]
-}
-```
-## Configuration
-Each instance (droid(s) or master) listen to their `.ini` file to load proper settings.
-
-#### master-config.ini:
-```diff
-+ LOCALSTORE: what folder to store files on the machine
-+ KEEP_FILES: Amount of files to keep on local system
-+ RUN_PORT: Port to bind master server to
-+ WHITELIST: where to load whitelisted droids (json file)
-+ B2KEY: B2 Account Key
-+ B2AUTH: B2 Authorization ID
-+ BUCKET: B2 Bucket to store backups in
-+ THREADS: Threads to run upload to B2 with
-```
-
 #### droid-config.ini:
 ```diff
 + LOCALSTORE: what folder to store files on the machine
@@ -109,30 +65,19 @@ Standalone Support (Not yet implemented)
 - KEEP_FILES: Amount of files to keep on system.
 ```
 
-## Master Whitelist protection
-Want to backup from a new client? Add their public IP to your whitelist's json file `whitelist.json` on the master:
-```json
-{
-  "whitelist": [
-    "10.0.0.0",
-    "10.0.0.1"
-  ]
-}
-```
-
 ## Credits
-* [BackBlaze](https://www.backblaze.com/): API Keys, b2 command line tool
+* [BackBlaze](https://www.backblaze.com/): B2 Cloud Storage
 
 ## License
 Read license information in LICENSE.TXT
 #### Authored by:
-* **TJ Balon** - [balon](https://git.tangoworldwide.net/balon)
-* **Matt Topor** - - [polak](https://git.tangoworldwide.net/polak)
+* **TJ Balon** - [balon](https://twitter.com/tjbalon)
 
 ## Future Work
-* Implement SSL Transfer of backup from master -> droid
-* Implement offload to other providors (Amazon, Google, etc)
-* Implement intial security key exchange of public RSA keys
-* RSA signing of messages from master -> droid protocol
-* Better clean-up handling. Delete per days, not amount of files
+* Full 3-2-1 using local storage & iCloud
+* Progress bars for uploads and downloads of data
+* Mass Upload/Download of data
+* Encrypt files at rest
+* URL Sharing for your files
+* 'Private' files (encrypted files on device, on backblaze, etc)
 * ???
