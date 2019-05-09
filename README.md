@@ -17,7 +17,7 @@ What's better than two copies of data? __Three__.
 * Easy to configure Settings tab; just copy and go
 * Native web handling from Swift
 * Lossless compression of media
-* File encryption on upload
+* Files encrypted in transit (https)
 
 ## How It Works
 Install the App on your device and head over to the 'Settings' tab! Here, you can paste in your settings from BackBlaze.com. These settings **MUST** be set before uploading files.
