@@ -24,14 +24,16 @@ class backupsVC: UIViewController {
         tabBarItem = UITabBarItem(title: "3-2-1", image: UIImage(named: "cloud"), tag: 1)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "321web") {
+            let vc = segue.destination as! webHandlerVC
+            vc.webUrl = "https://www.backblaze.com/blog/the-3-2-1-backup-strategy"
+            vc.webTitle = "BackBlaze on 3-2-1"
+        }
     }
-    */
+    
+    @IBAction func infoButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "321web", sender: self)
+    }
 
 }

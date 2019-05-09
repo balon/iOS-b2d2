@@ -73,4 +73,17 @@ class aboutVC: UIViewController {
         twitterController?.setInitialText("Check out ib2d2 on the app store - powered by @BackBlaze!")
         present(twitterController!, animated:true, completion: nil)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "aboutWeb") {
+            let vc = segue.destination as! webHandlerVC
+            vc.webUrl = "https://backblaze.com"
+            vc.webTitle = "BackBlaze Website"
+        }
+    }
+    
+    @IBAction func webButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "aboutWeb", sender: self)
+    }
 }

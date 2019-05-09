@@ -22,10 +22,9 @@
 		FAB2CBE022815586002AE880 /* BackBlaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBDF22815586002AE880 /* BackBlaze.swift */; };
 		FAB2CBE5228392D1002AE880 /* BackupTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBE4228392D1002AE880 /* BackupTableCellTableViewCell.swift */; };
 		FAB2CBE72283C22A002AE880 /* displayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBE62283C22A002AE880 /* displayVC.swift */; };
-		FAC19214227642E1008E531D /* webVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC19213227642E1008E531D /* webVC.swift */; };
+		FAB2CBED22842761002AE880 /* webHandlerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBEC22842761002AE880 /* webHandlerVC.swift */; };
 		FAD28F552273F3A80061BFCE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD28F542273F3A80061BFCE /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		FADB75FC22766B7700776AB5 /* listVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB75FB22766B7700776AB5 /* listVC.swift */; };
-		FADB75FE22767DC700776AB5 /* web321VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB75FD22767DC700776AB5 /* web321VC.swift */; };
 		FAFE82722273A05900834029 /* tabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE82712273A05900834029 /* tabsVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,10 +47,9 @@
 		FAB2CBE322827C9B002AE880 /* ib2d2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ib2d2-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAB2CBE4228392D1002AE880 /* BackupTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupTableCellTableViewCell.swift; sourceTree = "<group>"; };
 		FAB2CBE62283C22A002AE880 /* displayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayVC.swift; sourceTree = "<group>"; };
-		FAC19213227642E1008E531D /* webVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVC.swift; sourceTree = "<group>"; };
+		FAB2CBEC22842761002AE880 /* webHandlerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webHandlerVC.swift; sourceTree = "<group>"; };
 		FAD28F542273F3A80061BFCE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		FADB75FB22766B7700776AB5 /* listVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listVC.swift; sourceTree = "<group>"; };
-		FADB75FD22767DC700776AB5 /* web321VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web321VC.swift; sourceTree = "<group>"; };
 		FAFE82712273A05900834029 /* tabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,12 +100,11 @@
 				FA27DFBF2270F6C400B01F78 /* ib2d2.xcdatamodeld */,
 				FA27DFD92273960C00B01F78 /* backupsVC.swift */,
 				FAFE82712273A05900834029 /* tabsVC.swift */,
-				FAC19213227642E1008E531D /* webVC.swift */,
 				FADB75FB22766B7700776AB5 /* listVC.swift */,
-				FADB75FD22767DC700776AB5 /* web321VC.swift */,
 				FAB2CBDD228151D4002AE880 /* Reachability.swift */,
 				FAB2CBDF22815586002AE880 /* BackBlaze.swift */,
 				FAB2CBE62283C22A002AE880 /* displayVC.swift */,
+				FAB2CBEC22842761002AE880 /* webHandlerVC.swift */,
 			);
 			path = ib2d2;
 			sourceTree = "<group>";
@@ -191,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB2CBED22842761002AE880 /* webHandlerVC.swift in Sources */,
 				FADB75FC22766B7700776AB5 /* listVC.swift in Sources */,
 				FA27DFD22273958200B01F78 /* addVC.swift in Sources */,
 				FAB2CBE5228392D1002AE880 /* BackupTableCellTableViewCell.swift in Sources */,
@@ -202,9 +200,7 @@
 				FAB2CBDC227EE8F8002AE880 /* createVC.swift in Sources */,
 				FAB2CBE72283C22A002AE880 /* displayVC.swift in Sources */,
 				FA27DFB92270F6C400B01F78 /* AppDelegate.swift in Sources */,
-				FAC19214227642E1008E531D /* webVC.swift in Sources */,
 				FA27DFC12270F6C400B01F78 /* ib2d2.xcdatamodeld in Sources */,
-				FADB75FE22767DC700776AB5 /* web321VC.swift in Sources */,
 				FAFE82722273A05900834029 /* tabsVC.swift in Sources */,
 				FAB2CBDE228151D4002AE880 /* Reachability.swift in Sources */,
 			);
