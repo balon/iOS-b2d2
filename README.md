@@ -16,53 +16,20 @@ What's better than two copies of data? __Three__.
 * Seperate networking thread for uploads
 * Easy to configure Settings tab; just copy and go
 * Native web handling from Swift
+* Lossless compression of media
 * File encryption on upload
 
 ## How It Works
-Install is simple, each instance supports a "First Time Setup" to get you started! All information will be generated here, don't forget to edit the **IDENTIFIER** section of your config before FTSU is executed.
+Install the App on your device and head over to the 'Settings' tab! Here, you can paste in your settings from BackBlaze.com. These settings **MUST** be set before uploading files.
 
-#### Master:
-```bash
-$ pip3 install --upgrade b2
-$ python3 master.py --ftsu
-```
-#### Droid:
-```bash
-$ python3 droid.py --ftsu
-```
-
-## Usage
-Before running the commands found in usage, we suggest you read our entire README to understand how configuration files, whitelisting, and backup definitions work during routine calls.
-####Master:
-Master will wait for new clients to connect, receive it's backup files, and upload to BackBlaze. Master constantly listens and polls new clients, making standup of the server easy. After running FTSU, proceed with the following. We suggest running in a screen for convenience.
-```bash
-$ python3 master.py
-```
-
-#### Droid:
-Using a unix based system? Add a new system user which will be in the groups of each user's content you wish to backup. Then run the droid on crontab per that user. Example to follow:
-```bash
-$ useradd -s /usr/sbin/nologin -r -M -d /srv/backups backups
-$ adduser backups <existing user>
-$ crontab -e -u backups
-# Add the following (This droid backs up at 4:00 daily)
-# * 0 4 * * * python3 /srv/backups/droid.py >/dev/null 2>&1
-```
-
-#### droid-config.ini:
-```diff
-+ LOCALSTORE: what folder to store files on the machine
-+ RUNMODE: to run in standalone or remote mode for droids
-+ IDENTIFIER: name of the current server (ie: web-server) * SHOULD BE UNIQUE
-+ BACKUPFILE: where to load backup definitions from (json file)
-+ SERVERADDR: Define master IP
-+ SERVERPORT: Define master Port
-
-Standalone Support (Not yet implemented)
-- B2KEY: B2 Account Key
-- B2AUTH: B2 Authorization ID
-- KEEP_FILES: Amount of files to keep on system.
-```
+1. Visit the BackBlaze.com Website & Sign In
+2. Head over to the **Billing** tab
+  * Add your payment information for B2 Storage
+3. Go to the **Buckets** tab and create a new *private* bucket (e.g., "ib2d2-backups")
+4. Click on **'Show Account ID and Application Key'** at the top of the page
+5. Create a new key constrained to the bucket you just made
+6. Copy the bucketName, applicationKeyId, applicationKey into the Settings tab on your App
+7. Upload your files and you can view them in-app or under the **Buckets** tab
 
 ## Credits
 * [BackBlaze](https://www.backblaze.com/): B2 Cloud Storage
@@ -79,4 +46,5 @@ Read license information in LICENSE.TXT
 * Encrypt files at rest
 * URL Sharing for your files
 * 'Private' files (encrypted files on device, on backblaze, etc)
+* Backup 2FA information
 * ???
