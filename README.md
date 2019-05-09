@@ -4,10 +4,10 @@
 </center>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Python](https://img.shields.io/badge/python-v2.7%20%2F%20v3.6-blue.svg) ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2017.svg) [![Discord](https://img.shields.io/discord/370338751437733898.svg)](https://discord.gg/Ht5hfE7) [![Twitter Follow](https://img.shields.io/twitter/follow/tangoworldwide.svg?style=social&label=Follow)](https://twitter.com/TangoWorldWide)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Swift](hhttps://img.shields.io/cocoapods/p/testing.svg?color=red) ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg) [![Discord](https://img.shields.io/discord/370338751437733898.svg)](https://discord.gg/Ht5hfE7) [![Twitter Follow](https://img.shields.io/twitter/follow/tangoworldwide.svg?style=social&label=Follow)](https://twitter.com/TangoWorldWide)
 
 ## Basic Overview
-*In a galaxy far far away* a new backup solution was needed, so we brought you b2d2. Droid's (clients) will talk to their master host and upload backups by a user-defined json file. Upon receiving a backup, the master will hold the data on server, and offload to BackBlaze for maximum redundancy. 
+*In a galaxy far far away* phones were being tossed in the toliet, stolen, and Apple's updates were corrupting file-systems... a new backup solution was needed, so we brought you iB2D2. Droid's (clients) will talk to their master host and upload backups by a user-defined json file. Upon receiving a backup, the master will hold the data on server, and offload to BackBlaze for maximum redundancy. 
 
 What's better than two copies of data? __Three__.
 
