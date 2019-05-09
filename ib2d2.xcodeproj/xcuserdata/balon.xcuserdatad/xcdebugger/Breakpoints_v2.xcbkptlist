@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ib2d2/listVC.swift"
+            timestampString = "579077412.848313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "listVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ib2d2.listVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ib2d2.listVC&gt;"
+                  moduleName = "ib2d2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/balon/Desktop/ios%20development/ib2d2/ib2d2/listVC.swift"
+                  timestampString = "579060942.178537"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ib2d2.listVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ib2d2.listVC&gt;"
+                  moduleName = "ib2d2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/balon/Desktop/ios%20development/ib2d2/ib2d2/listVC.swift"
+                  timestampString = "579060942.181325"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

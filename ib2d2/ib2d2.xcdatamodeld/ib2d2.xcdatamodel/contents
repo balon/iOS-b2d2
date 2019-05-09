@@ -5,7 +5,19 @@
         <attribute name="applicationKey" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bucketName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Backups" representedClassName="Backups" syncable="YES" codeGenerationType="class">
+        <attribute name="backupDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="backupTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bbFileID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cloudPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCloud" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isImage" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLocal" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="localPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="AppSettings" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Backups" positionX="-45" positionY="27" width="128" height="180"/>
     </elements>
 </model>

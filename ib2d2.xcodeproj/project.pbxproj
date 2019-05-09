@@ -18,6 +18,10 @@
 		FA27DFD6227395B700B01F78 /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DFD5227395B700B01F78 /* aboutVC.swift */; };
 		FA27DFDA2273960C00B01F78 /* backupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27DFD92273960C00B01F78 /* backupsVC.swift */; };
 		FAB2CBDC227EE8F8002AE880 /* createVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBDB227EE8F8002AE880 /* createVC.swift */; };
+		FAB2CBDE228151D4002AE880 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBDD228151D4002AE880 /* Reachability.swift */; };
+		FAB2CBE022815586002AE880 /* BackBlaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBDF22815586002AE880 /* BackBlaze.swift */; };
+		FAB2CBE5228392D1002AE880 /* BackupTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBE4228392D1002AE880 /* BackupTableCellTableViewCell.swift */; };
+		FAB2CBE72283C22A002AE880 /* displayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2CBE62283C22A002AE880 /* displayVC.swift */; };
 		FAC19214227642E1008E531D /* webVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC19213227642E1008E531D /* webVC.swift */; };
 		FAD28F552273F3A80061BFCE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD28F542273F3A80061BFCE /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		FADB75FC22766B7700776AB5 /* listVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB75FB22766B7700776AB5 /* listVC.swift */; };
@@ -39,6 +43,11 @@
 		FA27DFD5227395B700B01F78 /* aboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutVC.swift; sourceTree = "<group>"; };
 		FA27DFD92273960C00B01F78 /* backupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backupsVC.swift; sourceTree = "<group>"; };
 		FAB2CBDB227EE8F8002AE880 /* createVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createVC.swift; sourceTree = "<group>"; };
+		FAB2CBDD228151D4002AE880 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FAB2CBDF22815586002AE880 /* BackBlaze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBlaze.swift; sourceTree = "<group>"; };
+		FAB2CBE322827C9B002AE880 /* ib2d2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ib2d2-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAB2CBE4228392D1002AE880 /* BackupTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		FAB2CBE62283C22A002AE880 /* displayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayVC.swift; sourceTree = "<group>"; };
 		FAC19213227642E1008E531D /* webVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVC.swift; sourceTree = "<group>"; };
 		FAD28F542273F3A80061BFCE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		FADB75FB22766B7700776AB5 /* listVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listVC.swift; sourceTree = "<group>"; };
@@ -81,7 +90,9 @@
 				FA27DFB82270F6C400B01F78 /* AppDelegate.swift */,
 				FA27DFBA2270F6C400B01F78 /* ViewController.swift */,
 				FA27DFBC2270F6C400B01F78 /* Main.storyboard */,
+				FAB2CBE4228392D1002AE880 /* BackupTableCellTableViewCell.swift */,
 				FAB2CBDB227EE8F8002AE880 /* createVC.swift */,
+				FAB2CBE322827C9B002AE880 /* ib2d2-Bridging-Header.h */,
 				FA27DFD12273958200B01F78 /* addVC.swift */,
 				FA27DFD3227395A200B01F78 /* settingsVC.swift */,
 				FA27DFD5227395B700B01F78 /* aboutVC.swift */,
@@ -94,6 +105,9 @@
 				FAC19213227642E1008E531D /* webVC.swift */,
 				FADB75FB22766B7700776AB5 /* listVC.swift */,
 				FADB75FD22767DC700776AB5 /* web321VC.swift */,
+				FAB2CBDD228151D4002AE880 /* Reachability.swift */,
+				FAB2CBDF22815586002AE880 /* BackBlaze.swift */,
+				FAB2CBE62283C22A002AE880 /* displayVC.swift */,
 			);
 			path = ib2d2;
 			sourceTree = "<group>";
@@ -179,16 +193,20 @@
 			files = (
 				FADB75FC22766B7700776AB5 /* listVC.swift in Sources */,
 				FA27DFD22273958200B01F78 /* addVC.swift in Sources */,
+				FAB2CBE5228392D1002AE880 /* BackupTableCellTableViewCell.swift in Sources */,
 				FA27DFBB2270F6C400B01F78 /* ViewController.swift in Sources */,
 				FA27DFD4227395A200B01F78 /* settingsVC.swift in Sources */,
 				FA27DFDA2273960C00B01F78 /* backupsVC.swift in Sources */,
+				FAB2CBE022815586002AE880 /* BackBlaze.swift in Sources */,
 				FA27DFD6227395B700B01F78 /* aboutVC.swift in Sources */,
 				FAB2CBDC227EE8F8002AE880 /* createVC.swift in Sources */,
+				FAB2CBE72283C22A002AE880 /* displayVC.swift in Sources */,
 				FA27DFB92270F6C400B01F78 /* AppDelegate.swift in Sources */,
 				FAC19214227642E1008E531D /* webVC.swift in Sources */,
 				FA27DFC12270F6C400B01F78 /* ib2d2.xcdatamodeld in Sources */,
 				FADB75FE22767DC700776AB5 /* web321VC.swift in Sources */,
 				FAFE82722273A05900834029 /* tabsVC.swift in Sources */,
+				FAB2CBDE228151D4002AE880 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tbalon.ib2d2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ib2d2/ib2d2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,6 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tbalon.ib2d2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ib2d2/ib2d2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

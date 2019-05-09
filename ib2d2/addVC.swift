@@ -19,6 +19,13 @@ class addVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         imagePicker.delegate = self
+        
+        // Now let's check for internet & settings...
+        
+        // check internet
+        
+        // check settings are set
+        
     }
     
     /* Set the tab name + image */
@@ -47,9 +54,7 @@ class addVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
             // User selected an image
             print("Uploading an image")
             selectedMedia = info[.originalImage] as? UIImage
-            let imageURL = info[UIImagePickerController.InfoKey.mediaURL] as! NSURL
-            //let imagePath =  imageURL.path!
-            //let localPath = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(imagePath)
+            let imageURL = info[UIImagePickerController.InfoKey.imageURL] as! NSURL
             mediaPath = imageURL
             isImage = true
         } else {
@@ -57,8 +62,6 @@ class addVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
             print("Uploading a video")
             selectedMedia = info[.originalImage] as? UIImage
             let imageURL = info[UIImagePickerController.InfoKey.mediaURL] as! NSURL
-            //let imagePath =  imageURL.path!
-            //let localPath = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(imagePath)
             mediaPath = imageURL
             isImage = false
         }

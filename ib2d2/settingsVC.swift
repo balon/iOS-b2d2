@@ -20,7 +20,6 @@ class settingsVC: UIViewController {
     @IBOutlet weak var textAccountKey: UITextField!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var settingsCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +44,8 @@ class settingsVC: UIViewController {
     // ------ updateTextFields(): See if anything has changed to show users
     func updateTextFields(){
         let settings = fetchSettings()
-        if settingsCount > 0{
-            placeholdExisting(settings: settings!)
+        if settings.count > 0{
+            placeholdExisting(settings: settings.data!)
         }
     }
     
@@ -91,21 +90,20 @@ class settingsVC: UIViewController {
         }
     }
     
-    // ------ fetchSettings(): return result object
-    func fetchSettings() -> Array<Any>? {
+    // ------ fetchSettings(): return result and count
+    func fetchSettings() -> (data: Array<Any>?, count: Int) {
         let context = appDelegate.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "AppSettings")
         request.returnsObjectsAsFaults = false
         
         do {
             let result = try context.fetch(request)
-            settingsCount = result.count
-            return result
+            return (result, result.count)
         } catch {
             print("[Error] Unable to fetch results")
         }
         
-        return nil
+        return (nil, 0)
     }
     
     // ------ clearSettings(): delete all existing entries in CoreData
