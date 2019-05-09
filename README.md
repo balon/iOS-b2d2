@@ -24,7 +24,8 @@ Install the App on your device and head over to the 'Settings' tab! Here, you ca
 
 1. Visit the BackBlaze.com Website & Sign In
 2. Head over to the **Billing** tab
-  * Add your payment information for B2 Storage
+ * Add your payment information for B2 Storage
+ * Add fall-back payment information
 3. Go to the **Buckets** tab and create a new *private* bucket (e.g., "ib2d2-backups")
 4. Click on **'Show Account ID and Application Key'** at the top of the page
 5. Create a new key constrained to the bucket you just made
